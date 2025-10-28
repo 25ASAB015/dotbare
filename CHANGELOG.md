@@ -15,6 +15,35 @@ Noteble changes are documentated in this file.
   - transform a generic `git` command to a `dotbare` command; e.g. `git log` -> `dotbare -g flog`
   - Bind this widget to keys of your choice (e.g. `ctrl-u`): `bindkey "^u" dotbare-transform`
 
+## 1.4.0 (28/10/2025)
+
+### Added
+
+- Common basic zsh widgets, including `dotbare fedit` ([#24](https://github.com/kazhala/dotbare/issues/24))
+- New zsh widget `dotbare-transform` to convert generic `git` commands into `dotbare` equivalents
+  - Example: `git log` → `dotbare -g flog`
+  - You may bind this widget to any key, e.g. `bindkey "^u" dotbare-transform`
+
+### Fixed
+
+- zsh completion: removed an unnecessary argument ([#26](https://github.com/kazhala/dotbare/issues/26))
+- `dotbare-transform`: removed an unwanted trailing space in transformed commands
+
+### Docs
+
+- Added Fig as an installation method to the README
+- Fixed/readjusted badges
+- Corrected typos in README and setup section
+- Updated changelog entries
+
+### CI
+
+- Updated CI runner configuration
+
+### Tests
+
+- Updated shellcheck version and related tests
+
 ## 1.3.1 (25/08/2020)
 
 ### Fixed
